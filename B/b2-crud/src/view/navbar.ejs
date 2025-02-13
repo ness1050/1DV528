@@ -1,0 +1,19 @@
+
+<div id="navbar" class="navbar">
+
+  <ul> <a href="/" class="home"><img src="/public/home.png" alt="icon">  Home</a> </ul>
+  <ul> <a href="/snippet" class="browse"><img src="/public/code-review.png" alt="icon"> Browse</a> </ul>
+  <% if (user) { %>
+    <ul> <a href="/logout"><img src="/public/logout.png" alt="icon"> Logout</a> </ul>
+  <% } else { %>   
+    <ul> <a href="/login"><img src="/public/permission.png" alt="icon"> Login</a> </ul>
+    <ul> <a href="/register"><img src="/public/web-development.png" alt="icon"> Register</a> </ul>
+  <% } %>
+  <% if (user) { %>
+    <ul id="user" class="user">
+      <p> Loged in as <%= user.name %>
+      </p>
+    </ul>
+  <% } %>
+</div>
+  

@@ -1,0 +1,141 @@
+
+.snippets-page-head {
+  margin-left: 31%;
+  display: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.snippets-page {
+  height: 900px;
+  background-color: rgb(31, 14, 14);
+  border-radius: 15px;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  margin-left: 35%;
+  align-items: center;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+
+.single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.snippet {
+  display: fixed;
+  flex-direction: column;
+  width: 70%;
+  border-radius: 10px;
+  max-width: 70%;
+  margin-top: 10%;
+  margin-bottom: 30px;
+  margin-left: 10%;
+  padding: 20px;
+  background-color: #444;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.snippet-top {
+  display: fixed;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.snippet-title {
+  padding: 10px;
+}
+
+.edit-delete-btns {
+  display: flex;
+}
+
+.edit-link,
+.delete-link {
+  margin-left: 10px;
+}
+
+.snippet-info {
+  padding: 10px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.snippet-description {
+  padding: 10px;
+}
+
+.code {
+  overflow-x: auto;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+h1 {
+  color: #444;
+  margin-left: 8%;
+}
+
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.create-link,
+.edit-link,
+.delete-link {
+  margin: 10px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.delete-link {
+  background-color: #b80505;
+}
+
+.create-link:hover,
+.edit-link:hover {
+  background-color: #005da4;
+}
+
+.delete-link:hover {
+  background-color: #f00;
+}
+
