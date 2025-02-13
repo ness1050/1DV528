@@ -1,0 +1,41 @@
+/* Navbar Positioned at the Bottom and Centered */
+.navbar {
+  background-color: rgba(156, 114, 35, 0);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  padding: 0 20px;
+}
+  
+  
+.navbar div {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
+
+
+.navbar div button {
+  margin: 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 20px; 
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+
+}
+
+.navbar div button:hover {
+  transform: scale(1.2); 
+  background-color: rgba(11, 163, 29, 0.434); 
+}
+
+

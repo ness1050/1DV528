@@ -1,0 +1,350 @@
+/*nq222af*/
+
+body {
+  background-size: cover;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('../img/b1.jpg');
+}
+
+.container {
+  
+  width: auto;
+  height: auto;
+  background-color: rgb(34, 128, 160);
+
+}
+
+.memoryApp {
+  background-image: url('../img/memory.png');
+}
+
+
+.chatApp {
+  background-image: url('../img/message.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+/* Clock Styling */
+.dateDiv {
+  z-index: 1;
+  position: flex;
+  top: 10px; 
+  right: 10px; 
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5em;
+  border-radius: 50%; 
+  width: 200px; 
+  height: 200px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+
+.space {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+button, .grid-select-size {
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.topOfGame button {
+  width: 20%;
+}
+
+.topBar {
+  background-color: rgba(17, 47, 145, 0.87);
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.elementbar {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_Division {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(36, 35, 35);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 10px 0;
+}
+
+.operationDiv button {
+  margin-right: 4px;
+  height: 20px;
+  width: 60px;
+  border-color: rgba(255, 255, 255, 0.766);
+  background-color: rgba(248, 248, 248, 0.97);
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+
+
+.game_Division button {
+  height: 45px;
+  width: 40%;
+  margin: auto;
+  background-blend-mode: luminosity;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(145, 145, 145, 0.5);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+.game_Division button:active {
+  background-color: rgb(33, 186, 43);
+
+}
+
+.game_Division button:hover {
+  cursor: pointer;
+}
+
+
+.topOfGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  background-color: rgb(36, 35, 35);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 10px 0;
+}
+
+
+.operationDiv {
+  size: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.operationDiv button:hover {
+  background-color: rgba(63, 114, 216, 0.617);
+  border-radius: 10px;
+}
+
+.hr {
+  height: 100%;
+  width: 100%;
+  color: #000;
+}
+
+.window {
+  background-color: rgba(221, 233, 233, 0);
+  padding: 1px;
+  position: absolute;
+  left: 90px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  min-height: 400px;
+  min-width: 700px;
+}
+
+
+.maximize {
+  background-image: url('../img/max.png');
+}
+
+.minimize {
+  background-image: url('../img/min.png');
+}
+
+.close {
+  background-image: url('../img/ex.png');
+}
+
+.hide {
+  background-image: url('../img/hide.png');
+}
+
+.hidden {
+  display: none;
+}
+
+.memoryGame {
+  align-items: center;
+  justify-items: center;
+  height: auto;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(36, 35, 35);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 10px 0;
+}
+
+.startDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.grid:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+} 
+
+.win {
+  color: red;
+  font-size: 30px;
+  margin-top: 20px;
+  display: flex;
+  position: block;
+}
+
+/*Card division styling */
+
+.CardDivision {
+  margin: 20px;
+  object-fit: contain;
+  background-color: rgba(145, 145, 145, 0.1);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:90%;
+  width: 90%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.CardDivision:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.currentCard {
+  outline: 2px solid white;
+}
+
+.card {
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+
+.backside {
+  background-image: url('../img/bPoke.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  backface-visibility: hidden;
+  
+}
+
+.CardDivision.flipped {
+  transform: rotateY(180deg);
+}
+
+
+
+.card.correct {
+  animation: jump 0.3s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.card.wrong {
+  animation: shake 0.1s;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
+}
+
+.window.maxed {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+}
+
+.memoryGame, .game_Division {
+  overflow: auto;
+}
+
+@keyframes jump {
+  0%,
+  20% {
+    transform: translateY(-10px) rotateY(180deg);
+  }
+  
+  100% {
+    transform: translateY(0) rotateY(180deg);
+  }
+  }
+  
+  
+  @keyframes shake {
+  0% {
+    transform: translateX(-5px) rotateY(180deg);
+  }
+  
+  100% {
+    transform: translateX(+5px) rotateY(180deg);
+  }
+}

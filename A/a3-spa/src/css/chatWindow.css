@@ -1,0 +1,125 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; 
+  margin: auto;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.chatDivision {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.chatheader {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2a1781;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.chatBody {
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 200px;
+  width: auto;
+  max-height: 800px;
+  padding: 10px;
+  background-color: #fff;
+  color: white;
+}
+
+.messageDiv  {
+  background-color: white;
+  color: black;
+}
+
+.chatFooter {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: #f1f1f1;
+  
+}
+.chatInput {
+  flex-grow: 1;
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.emojiContainer {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 100;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.userNameDiv {
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+ 
+.emojiButton:hover {
+  cursor: pointer;
+  background-color: rgb(30, 225, 30);
+}
+
+.chatButton:hover {
+  cursor: grab;
+  background-color: rgb(12, 108, 197);
+  color: white;
+}
+
+.username-input, .logoutBtn {
+  display: block;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  visibility: visible;
+}
+
+.logoutBtn:hover {
+  background-color: #d0cbe3;
+}
+
+.refreshbutton:hover {
+  display: block;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.channelSelect {
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(211, 185, 34);
+}
+
+.clearBtn {
+  border-radius: 5px;
+  background-color: rgba(239, 14, 101, 0.583);
+  color: white;
+}
+
+.clearBtn:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+
+.nameBtn {
+  background-color: rgb(31, 133, 99);
+}
+
