@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images\s.jpg">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <img src="header-image.jpg" alt="Header Image">
+        <h1>Lionel Messi Fan Page</h1>
+        <p>The Home of Messi Fans</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="page.html">Article</a>
+        <a href="typography.html">Typography</a>
+        <a href="form.html">Form</a>
+        <a href="about.html">About</a>
+        <a href="column3.html">Three Columns</a>
+    </nav>
+    <div class="form">
+        <form action="submit-details" method="post">
+            <h2>Credit Card Payment</h2>
+            <div class="form-group">
+                <label for="name">Cardholder's Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="amount">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="type">
+                <label for="card-type">Card Type:</label>
+                <select id="card-type" name="card_type">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </div>
+            <div class="type1">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card_number" required>
+            </div>
+            <div class="date">
+                <label for="validity">Valid Until:</label>
+                <input type="month" id="validity" name="validity" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <div class="Site">
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN CSS</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://validator.w3.org/">HTML Validator</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a></li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>
