@@ -1,0 +1,73 @@
+.create-snippet {
+  margin: 30px;
+  border-radius: 10px;
+  background-color: #151212;
+  width: 50%;
+  margin-left: 500px;
+  align-items: center;
+  justify-content: center;
+}
+  
+.create-snippet div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#create-snippet-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#create-snippet-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+  
+#create-snippet-form input[type="text"],
+#create-snippet-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+#create-snippet-form textarea {
+  background-color: #ccc;
+}
+
+#create-snippet-form textarea.snippet {
+  height: 200px;
+  width: 100%;
+}
+
+#create-snippet-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.snippet-save {
+  margin-top: 20px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  width: 30%;
+}
+
+.snippet-save:hover {
+  background-color: #005da4;
+}

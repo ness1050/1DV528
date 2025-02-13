@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitLab Issues</title>
+  <link rel="stylesheet" href="../css/gitlab.css">
+</head>
+<body>
+  <h1>GitLab Issues</h1>
+  <ul id="issuesList">
+    <% issues.forEach(issue => { %>
+      <li>
+        <strong>Title:</strong> <%= issue.title %><br>
+        <strong>Description:</strong> <%= issue.description %><br>
+        <strong>Date:</strong> <%= new Date(issue.created_at).toLocaleDateString() %><br>
+        <strong>Author:</strong> <%= issue.author.name %><br>
+        <strong>Status:</strong> <%= issue.state === 'opened' ? 'Open' : 'Closed' %>
+      </li>
+    <% }); %>
+  </ul>
+
+  <!-- Include the Socket.IO client -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+  
+    socket.on('updatedIssuesList', function(issues) {
+      const issueList = document.getElementById('issuesList');
+      issueList.innerHTML = ''; // Clear the current list
+  
+      issues.forEach(issue => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <strong>Title:</strong> ${issue.title}<br>
+          <strong>Description:</strong> ${issue.description || 'No description'}<br>
+          <strong>Date:</strong> ${new Date(issue.created_at).toLocaleDateString()}<br>
+          <strong>Author:</strong> ${issue.author.name}<br>
+          <strong>Status:</strong> ${issue.state === 'opened' ? 'Open' : 'Closed'}
+        `;
+        issueList.appendChild(li);
+      });
+    });
+  </script>
+  
+  
+</body>
+</html>
